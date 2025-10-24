@@ -1,0 +1,401 @@
+<!DOCTYPE HTML>
+<!--
+	Super Foodie - Cooking & Recipes
+	Built on ZeroFour template by HTML5 UP
+-->
+<html>
+	<head>
+		<title>Super Foodie - Joey Romaine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="Super Foodie - Recipes and culinary creations by Joey Romaine">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.recipe-card {
+				margin-bottom: 3em;
+				padding: 2em;
+				background: #f9f9f9;
+				border-radius: 8px;
+				box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+			}
+			.recipe-meta {
+				color: #999;
+				font-size: 0.9em;
+				margin-bottom: 1em;
+			}
+			.recipe-meta span {
+				margin-right: 1.5em;
+			}
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%;
+				height: 0;
+				overflow: hidden;
+				max-width: 100%;
+				margin: 1.5em 0;
+				border-radius: 8px;
+			}
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				border-radius: 8px;
+			}
+			.recipe-card h3 {
+				margin-top: 0;
+				color: #e74c3c;
+			}
+			.recipe-card h4 {
+				color: #555;
+				border-bottom: 2px solid #e74c3c;
+				padding-bottom: 0.5em;
+				margin-top: 1.5em;
+			}
+			.recipe-card ul, .recipe-card ol {
+				margin-left: 1.5em;
+			}
+			.recipe-difficulty {
+				display: inline-block;
+				background: #27ae60;
+				color: #fff;
+				padding: 0.3em 0.8em;
+				border-radius: 4px;
+				font-size: 0.8em;
+				font-weight: bold;
+			}
+		</style>
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">Joey Romaine</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li><a href="photography.html">Photography</a></li>
+												<li><a href="videos.html">Videos</a></li>
+												<li><a href="infosec.html">HackIt with Joe</a></li>
+												<li class="current_page_item"><a href="kitchen.html">Super Foodie</a></li>
+												<li><a href="diy.html">DIY</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div id="content">
+
+									<!-- Content -->
+
+										<article>
+											<header class="major" style="text-align: center;">
+												<h2>Super Foodie</h2>
+												<p>Recipes & Culinary Creations</p>
+											</header>
+
+											<p style="text-align: center;">With over 10 years of experience working in and managing restaurants, I bring professional techniques and creative flair to every dish. Each recipe includes detailed instructions, video tutorials, and downloadable recipe cards.</p>
+
+											<p style="text-align: center;"><strong>Follow on Instagram:</strong> <a href="https://instagram.com/YOUR_COOKING_HANDLE" target="_blank">@YourCookingHandle (Add your handle)</a></p>
+
+											<hr />
+
+											<!-- RECIPE CARD TEMPLATE - COPY THIS SECTION TO ADD NEW RECIPES -->
+
+											<div class="recipe-card">
+												<img src="images/recipes/recipe1.jpg" alt="Recipe Name" style="width:100%; border-radius: 8px; margin-bottom: 1em;"
+												     onerror="this.src='images/pic01.jpg'"/>
+												
+												<span class="recipe-difficulty">EASY</span>
+												<h3>Recipe Title Here</h3>
+												
+												<p class="recipe-meta">
+													<span><strong>Prep Time:</strong> 15 min</span>
+													<span><strong>Cook Time:</strong> 30 min</span>
+													<span><strong>Servings:</strong> 4</span>
+												</p>
+												
+												<p><strong>Description:</strong> Write a brief description of the dish here. What makes it special? What occasions is it perfect for?</p>
+												
+												<!-- Video Tutorial -->
+												<div class="video-container">
+													<iframe 
+														src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+														frameborder="0" 
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+														allowfullscreen>
+													</iframe>
+												</div>
+												
+												<h4>Ingredients</h4>
+												<ul>
+													<li>First ingredient with measurement</li>
+													<li>Second ingredient with measurement</li>
+													<li>Third ingredient with measurement</li>
+													<li>Add more ingredients as needed</li>
+												</ul>
+												
+												<h4>Instructions</h4>
+												<ol>
+													<li>First step with detailed instructions</li>
+													<li>Second step with detailed instructions</li>
+													<li>Third step with detailed instructions</li>
+													<li>Continue with all steps</li>
+													<li>Final plating and serving instructions</li>
+												</ol>
+												
+												<h4>Chef's Tips</h4>
+												<ul>
+													<li>Helpful tip about technique or ingredients</li>
+													<li>Substitution suggestions</li>
+													<li>Storage and reheating instructions</li>
+												</ul>
+												
+												<footer style="margin-top: 2em;">
+													<a href="recipes/recipe-name.pdf" class="button icon solid fa-download" download>Download Recipe PDF</a>
+													<p style="margin-top: 0.5em; font-size: 0.9em; color: #999;"><em>Note: Create PDF version and place in /recipes/ folder</em></p>
+												</footer>
+											</div>
+
+											<!-- Example Recipe 2 -->
+											<div class="recipe-card">
+												<img src="images/recipes/recipe2.jpg" alt="Signature Pasta Dish" style="width:100%; border-radius: 8px; margin-bottom: 1em;"
+												     onerror="this.src='images/pic02.jpg'"/>
+												
+												<span class="recipe-difficulty" style="background: #f39c12;">INTERMEDIATE</span>
+												<h3>Signature Pasta Dish</h3>
+												
+												<p class="recipe-meta">
+													<span><strong>Prep Time:</strong> 20 min</span>
+													<span><strong>Cook Time:</strong> 25 min</span>
+													<span><strong>Servings:</strong> 6</span>
+												</p>
+												
+												<p><strong>Description:</strong> A restaurant-quality pasta dish that combines traditional techniques with modern flavor profiles. Perfect for dinner parties or special occasions.</p>
+												
+												<div class="video-container">
+													<iframe 
+														src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+														frameborder="0" 
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+														allowfullscreen>
+													</iframe>
+												</div>
+												
+												<h4>Ingredients</h4>
+												<ul>
+													<li>1 lb fresh pasta (or high-quality dried)</li>
+													<li>3 tbsp olive oil</li>
+													<li>4 cloves garlic, minced</li>
+													<li>1 cup heavy cream</li>
+													<li>1/2 cup parmesan cheese, grated</li>
+													<li>Fresh basil for garnish</li>
+													<li>Salt and pepper to taste</li>
+												</ul>
+												
+												<h4>Instructions</h4>
+												<ol>
+													<li>Bring a large pot of salted water to boil for pasta</li>
+													<li>Heat olive oil in a large skillet over medium heat</li>
+													<li>Add garlic and sauté until fragrant, about 1 minute</li>
+													<li>Add cream and simmer for 5 minutes until slightly thickened</li>
+													<li>Cook pasta according to package directions, reserve 1 cup pasta water</li>
+													<li>Drain pasta and add to sauce, tossing to combine</li>
+													<li>Add parmesan cheese and pasta water as needed for consistency</li>
+													<li>Season with salt and pepper, garnish with fresh basil</li>
+												</ol>
+												
+												<h4>Chef's Tips</h4>
+												<ul>
+													<li>Always reserve pasta water—the starch helps create a silky sauce</li>
+													<li>Use freshly grated parmesan for best flavor and texture</li>
+													<li>Can add protein (chicken, shrimp) or vegetables for variation</li>
+													<li>Leftovers can be refrigerated for up to 3 days</li>
+												</ul>
+												
+												<footer style="margin-top: 2em;">
+													<a href="recipes/signature-pasta.pdf" class="button icon solid fa-download" download>Download Recipe PDF</a>
+												</footer>
+											</div>
+
+											<!-- Example Recipe 3 -->
+											<div class="recipe-card">
+												<img src="images/recipes/recipe3.jpg" alt="Advanced Technique" style="width:100%; border-radius: 8px; margin-bottom: 1em;"
+												     onerror="this.src='images/pic03.jpg'"/>
+												
+												<span class="recipe-difficulty" style="background: #e74c3c;">ADVANCED</span>
+												<h3>Restaurant-Level Technique</h3>
+												
+												<p class="recipe-meta">
+													<span><strong>Prep Time:</strong> 45 min</span>
+													<span><strong>Cook Time:</strong> 2 hours</span>
+													<span><strong>Servings:</strong> 8</span>
+												</p>
+												
+												<p><strong>Description:</strong> An advanced recipe showcasing professional cooking techniques learned from years in restaurant management. This dish requires patience and precision but delivers exceptional results.</p>
+												
+												<div class="video-container">
+													<iframe 
+														src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+														frameborder="0" 
+														allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+														allowfullscreen>
+													</iframe>
+												</div>
+												
+												<h4>Ingredients</h4>
+												<ul>
+													<li>Add your ingredient list here</li>
+													<li>Include precise measurements</li>
+													<li>Note special or hard-to-find ingredients</li>
+												</ul>
+												
+												<h4>Instructions</h4>
+												<ol>
+													<li>Detailed step-by-step instructions</li>
+													<li>Include timing and visual cues</li>
+													<li>Explain techniques thoroughly</li>
+												</ol>
+												
+												<h4>Chef's Tips</h4>
+												<ul>
+													<li>Advanced technique explanations</li>
+													<li>Troubleshooting common issues</li>
+													<li>Professional presentation tips</li>
+												</ul>
+												
+												<footer style="margin-top: 2em;">
+													<a href="recipes/advanced-recipe.pdf" class="button icon solid fa-download" download>Download Recipe PDF</a>
+												</footer>
+											</div>
+
+											<hr />
+
+											<h3>How to Add New Recipes</h3>
+											<div style="background: #f9f9f9; padding: 1.5em; border-left: 4px solid #e74c3c;">
+												<h4>Step-by-Step Instructions:</h4>
+												<ol>
+													<li><strong>Prepare Images:</strong> Add recipe photo to <code>/images/recipes/</code> folder</li>
+													<li><strong>Copy Template:</strong> Copy the "recipe-card" div section above</li>
+													<li><strong>Set Difficulty:</strong> Choose EASY (green), INTERMEDIATE (orange), or ADVANCED (red)</li>
+													<li><strong>Add Recipe Details:</strong> Fill in title, times, servings, description</li>
+													<li><strong>Add Video:</strong> Replace VIDEO_ID_HERE with your YouTube video ID</li>
+													<li><strong>List Ingredients:</strong> Include all ingredients with measurements</li>
+													<li><strong>Write Instructions:</strong> Number steps clearly and include timing</li>
+													<li><strong>Add Tips:</strong> Include helpful chef's tips and variations</li>
+													<li><strong>Create PDF:</strong> Make a downloadable PDF version and place in <code>/recipes/</code> folder</li>
+												</ol>
+
+												<h4>Difficulty Levels:</h4>
+												<ul>
+													<li><strong>EASY:</strong> <code>background: #27ae60;</code> (green) - Basic techniques, minimal ingredients</li>
+													<li><strong>INTERMEDIATE:</strong> <code>background: #f39c12;</code> (orange) - Some advanced techniques</li>
+													<li><strong>ADVANCED:</strong> <code>background: #e74c3c;</code> (red) - Professional techniques, longer prep</li>
+												</ul>
+
+												<h4>Creating Recipe PDFs:</h4>
+												<p>Use tools like Canva, Adobe InDesign, or even Word to create attractive recipe PDFs. Include:</p>
+												<ul>
+													<li>Recipe name and photo</li>
+													<li>Prep/cook times and servings</li>
+													<li>Complete ingredient list</li>
+													<li>Step-by-step instructions</li>
+													<li>Your branding/website info</li>
+												</ul>
+											</div>
+
+											<hr />
+
+											<h3>About Super Foodie</h3>
+											<p>Drawing from over a decade of experience in restaurant management and culinary arts, Super Foodie brings you recipes that combine professional techniques with home cooking practicality. Each recipe has been tested and refined to ensure you can recreate restaurant-quality dishes in your own kitchen.</p>
+											
+											<p>Follow along on social media for cooking tips, behind-the-scenes content, and new recipe announcements!</p>
+
+										</article>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer Wrapper -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+								<section>
+									<h2>Navigation</h2>
+									<ul class="divided">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="photography.html">Photography</a></li>
+										<li><a href="videos.html">Videos</a></li>
+										<li><a href="infosec.html">HackIt with Joe</a></li>
+										<li><a href="kitchen.html">Super Foodie</a></li>
+										<li><a href="diy.html">DIY Projects</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+								<section>
+									<h2>Connect</h2>
+									<ul class="divided">
+										<li><a href="https://twitter.com/Tank23x0" target="_blank">Twitter/X</a></li>
+										<li><a href="https://github.com/Tank23x0" target="_blank">GitHub</a></li>
+										<li><a href="https://instagram.com/YOUR_COOKING_HANDLE" target="_blank">Instagram (Cooking)</a></li>
+										<li><a href="mailto:joeyromaine@pm.me">Email</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium imp-medium">
+								<section>
+									<h2><strong>Joey Romaine</strong> - 0-Day Drifter</h2>
+									<p>Artistic Liaison, Security Researcher, Automobile Engineer, Chef based in NYC.</p>
+									<a href="index.html#contact" class="button alt icon solid fa-envelope">Contact Me</a>
+								</section>
+							</div>
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; 2025 Joey Romaine. All rights reserved</li>
+										<li>Website: <a href="https://joeromaine.com">joeromaine.com</a></li>
+										<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,301 @@
+<!DOCTYPE HTML>
+<!--
+	YouTube Videos - Joey Romaine
+	Built on ZeroFour template by HTML5 UP
+-->
+<html>
+	<head>
+		<title>Videos - Joey Romaine</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="YouTube videos by Joey Romaine - Engineering, Chef, DIY, Security Hacking, Fitness">
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+			.video-container {
+				position: relative;
+				padding-bottom: 56.25%; /* 16:9 aspect ratio */
+				height: 0;
+				overflow: hidden;
+				max-width: 100%;
+				margin-bottom: 2em;
+			}
+			.video-container iframe {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+			}
+			.video-category {
+				display: inline-block;
+				background: #4acaa8;
+				color: #fff;
+				padding: 0.3em 0.8em;
+				border-radius: 4px;
+				font-size: 0.8em;
+				font-weight: bold;
+				margin-bottom: 0.5em;
+			}
+			.video-entry {
+				margin-bottom: 3em;
+				padding-bottom: 2em;
+				border-bottom: 1px solid #ddd;
+			}
+		</style>
+	</head>
+	<body class="right-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header Wrapper -->
+				<div id="header-wrapper">
+					<div class="container">
+
+						<!-- Header -->
+							<header id="header">
+								<div class="inner">
+
+									<!-- Logo -->
+										<h1><a href="index.html" id="logo">Joey Romaine</a></h1>
+
+									<!-- Nav -->
+										<nav id="nav">
+											<ul>
+												<li><a href="index.html">Home</a></li>
+												<li><a href="photography.html">Photography</a></li>
+												<li class="current_page_item"><a href="videos.html">Videos</a></li>
+												<li><a href="infosec.html">HackIt with Joe</a></li>
+												<li><a href="kitchen.html">Super Foodie</a></li>
+												<li><a href="diy.html">DIY</a></li>
+											</ul>
+										</nav>
+
+								</div>
+							</header>
+
+					</div>
+				</div>
+
+			<!-- Main Wrapper -->
+				<div id="main-wrapper">
+					<div class="wrapper style2">
+						<div class="inner">
+							<div class="container">
+								<div class="row">
+									<div class="col-8 col-12-medium">
+										<div id="content">
+
+											<!-- Content -->
+
+												<article>
+													<header class="major">
+														<h2>Video Content</h2>
+														<p>Engineering, Cooking, DIY, Security Hacking & Fitness</p>
+													</header>
+
+													<p>Welcome to my YouTube channel! Here you'll find content spanning my diverse interests—from engineering tutorials and security research to cooking demonstrations, DIY projects, and fitness tips.</p>
+													
+													<p><strong>Subscribe:</strong> <a href="https://www.youtube.com/channel/UCei94zmqIVceuUWjZz0gt8Q" target="_blank">My YouTube Channel</a></p>
+
+													<hr />
+
+													<!-- VIDEO TEMPLATE - COPY THIS SECTION TO ADD NEW VIDEOS -->
+													
+													<div class="video-entry">
+														<span class="video-category">ENGINEERING</span>
+														<h3>Video Title Here</h3>
+														<div class="video-container">
+															<!-- Replace VIDEO_ID_HERE with your YouTube video ID -->
+															<!-- To get video ID: From URL youtube.com/watch?v=ABC123, use ABC123 -->
+															<iframe 
+																src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+																frameborder="0" 
+																allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+																allowfullscreen>
+															</iframe>
+														</div>
+														<p><strong>Description:</strong> Add your video description here. Explain what viewers will learn or see in this video.</p>
+														<p><em>Published: Date Here</em></p>
+													</div>
+
+													<!-- Example Video 2 -->
+													<div class="video-entry">
+														<span class="video-category" style="background: #e74c3c;">COOKING</span>
+														<h3>Culinary Technique Video</h3>
+														<div class="video-container">
+															<iframe 
+																src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+																frameborder="0" 
+																allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+																allowfullscreen>
+															</iframe>
+														</div>
+														<p><strong>Description:</strong> Professional cooking techniques and recipes from my years in restaurant management.</p>
+														<p><em>Published: Date Here</em></p>
+													</div>
+
+													<!-- Example Video 3 -->
+													<div class="video-entry">
+														<span class="video-category" style="background: #3498db;">SECURITY</span>
+														<h3>Security Research & Hacking</h3>
+														<div class="video-container">
+															<iframe 
+																src="https://www.youtube.com/embed/VIDEO_ID_HERE" 
+																frameborder="0" 
+																allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+																allowfullscreen>
+															</iframe>
+														</div>
+														<p><strong>Description:</strong> InfoSec tutorials, vulnerability research, and security tool demonstrations.</p>
+														<p><em>Published: Date Here</em></p>
+													</div>
+
+													<hr />
+
+													<h3>How to Add New Videos</h3>
+													<div style="background: #f9f9f9; padding: 1.5em; border-left: 4px solid #4acaa8;">
+														<h4>Step-by-Step Instructions:</h4>
+														<ol>
+															<li><strong>Get Video ID:</strong> From your YouTube URL <code>youtube.com/watch?v=ABC123</code>, the ID is <code>ABC123</code></li>
+															<li><strong>Copy Template:</strong> Copy the "video-entry" div section above</li>
+															<li><strong>Replace VIDEO_ID_HERE:</strong> Paste your video ID in the iframe src</li>
+															<li><strong>Update Category:</strong> Change category (ENGINEERING, COOKING, DIY, SECURITY, FITNESS)</li>
+															<li><strong>Add Title & Description:</strong> Fill in your video title and description</li>
+															<li><strong>Set Date:</strong> Add publication date</li>
+														</ol>
+
+														<h4>Category Colors:</h4>
+														<ul>
+															<li><strong>Engineering:</strong> <code>background: #4acaa8;</code> (teal)</li>
+															<li><strong>Cooking:</strong> <code>background: #e74c3c;</code> (red)</li>
+															<li><strong>Security:</strong> <code>background: #3498db;</code> (blue)</li>
+															<li><strong>DIY:</strong> <code>background: #f39c12;</code> (orange)</li>
+															<li><strong>Fitness:</strong> <code>background: #9b59b6;</code> (purple)</li>
+														</ul>
+
+														<h4>If YouTube Takes Down a Video:</h4>
+														<p>Simply update the VIDEO_ID in the iframe src to point to your backup or new upload. The rest of your page content remains unchanged!</p>
+													</div>
+
+												</article>
+
+										</div>
+									</div>
+									<div class="col-4 col-12-medium">
+										<div id="sidebar">
+
+											<!-- Sidebar -->
+
+												<section>
+													<header class="major">
+														<h2>Video Categories</h2>
+													</header>
+													<ul class="style2">
+														<li><a href="#engineering">Engineering</a></li>
+														<li><a href="#cooking">Cooking & Chef Skills</a></li>
+														<li><a href="#diy">DIY Projects</a></li>
+														<li><a href="#security">Security & Hacking</a></li>
+														<li><a href="#fitness">Fitness & Training</a></li>
+													</ul>
+												</section>
+
+												<section>
+													<header class="major">
+														<h2>Channel Info</h2>
+													</header>
+													<p><strong>YouTube Channel:</strong><br/>
+													<a href="https://www.youtube.com/channel/UCei94zmqIVceuUWjZz0gt8Q" target="_blank">Joey Romaine</a></p>
+													<p>Subscribe to stay updated with new content across all categories!</p>
+													<footer>
+														<a href="https://www.youtube.com/channel/UCei94zmqIVceuUWjZz0gt8Q" target="_blank" class="button icon brands fa-youtube">Visit Channel</a>
+													</footer>
+												</section>
+
+												<section>
+													<header class="major">
+														<h2>Playlists</h2>
+													</header>
+													<p>Videos are organized by topic for easy navigation:</p>
+													<ul class="style2">
+														<li><span class="video-category">ENGINEERING</span> Technical tutorials</li>
+														<li><span class="video-category" style="background: #e74c3c;">COOKING</span> Recipes & techniques</li>
+														<li><span class="video-category" style="background: #f39c12;">DIY</span> Home projects</li>
+														<li><span class="video-category" style="background: #3498db;">SECURITY</span> InfoSec research</li>
+														<li><span class="video-category" style="background: #9b59b6;">FITNESS</span> Workout tips</li>
+													</ul>
+												</section>
+
+												<section>
+													<header class="major">
+														<h2>Upload Schedule</h2>
+													</header>
+													<p>New videos added regularly across all categories. Check back frequently or subscribe to get notified!</p>
+												</section>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- Footer Wrapper -->
+				<div id="footer-wrapper">
+					<footer id="footer" class="container">
+						<div class="row">
+							<div class="col-3 col-6-medium col-12-small">
+								<section>
+									<h2>Navigation</h2>
+									<ul class="divided">
+										<li><a href="index.html">Home</a></li>
+										<li><a href="photography.html">Photography</a></li>
+										<li><a href="videos.html">Videos</a></li>
+										<li><a href="infosec.html">HackIt with Joe</a></li>
+										<li><a href="kitchen.html">Super Foodie</a></li>
+										<li><a href="diy.html">DIY Projects</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-3 col-6-medium col-12-small">
+								<section>
+									<h2>Connect</h2>
+									<ul class="divided">
+										<li><a href="https://twitter.com/Tank23x0" target="_blank">Twitter/X</a></li>
+										<li><a href="https://github.com/Tank23x0" target="_blank">GitHub</a></li>
+										<li><a href="https://youtube.com/channel/UCei94zmqIVceuUWjZz0gt8Q" target="_blank">YouTube</a></li>
+										<li><a href="mailto:joeyromaine@pm.me">Email</a></li>
+									</ul>
+								</section>
+							</div>
+							<div class="col-6 col-12-medium imp-medium">
+								<section>
+									<h2><strong>Joey Romaine</strong> - 0-Day Drifter</h2>
+									<p>Artistic Liaison, Security Researcher, Automobile Engineer, Chef based in NYC.</p>
+									<a href="index.html#contact" class="button alt icon solid fa-envelope">Contact Me</a>
+								</section>
+							</div>
+							<div class="col-12">
+								<div id="copyright">
+									<ul class="menu">
+										<li>&copy; 2025 Joey Romaine. All rights reserved</li>
+										<li>Website: <a href="https://joeromaine.com">joeromaine.com</a></li>
+										<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+
+		</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
