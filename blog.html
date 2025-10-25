@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Infosec Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+      <div id="header-wrapper">
+        <div class="container">
+          <header id="header">
+            <div class="inner">
+              <h1><a href="index.html" id="logo">Your Name</a></h1>
+              <nav id="nav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="photography.html">Photography</a></li>
+                  <li><a href="videos.html">Videos</a></li>
+                  <li class="current_page_item"><a href="blog.html">Blog</a></li>
+                  <li><a href="cooking-diy.html">Cooking & DIY</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <div id="main-wrapper">
+        <div class="wrapper style2">
+          <div class="inner">
+            <div class="container">
+              <div id="content">
+                <article>
+                  <header class="major">
+                    <h2>Hacking & Infosec</h2>
+                    <p>Posts on tooling, techniques, and write-ups</p>
+                  </header>
+                  <section class="box article-list">
+                    <h2 class="icon fa-file-alt">Recent Posts</h2>
+                    <div id="posts"></div>
+                  </section>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-wrapper">
+        <footer id="footer" class="container">
+          <div class="row">
+            <div class="col-12">
+              <div id="copyright">
+                <ul class="menu">
+                  <li>&copy; <span id="year"></span> Your Name. All rights reserved.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      window.Site.renderPosts('posts', 'data/posts.json');
+    </script>
+  </body>
+</html>

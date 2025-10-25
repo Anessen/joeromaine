@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Videos</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <style>
+      .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
+      .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+      .video-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(320px,1fr)); gap: 2rem; }
+      .video-grid .box { margin: 0; }
+    </style>
+  </head>
+  <body class="no-sidebar is-preload">
+    <div id="page-wrapper">
+      <div id="header-wrapper">
+        <div class="container">
+          <header id="header">
+            <div class="inner">
+              <h1><a href="index.html" id="logo">Your Name</a></h1>
+              <nav id="nav">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="photography.html">Photography</a></li>
+                  <li class="current_page_item"><a href="videos.html">Videos</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="cooking-diy.html">Cooking & DIY</a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+        </div>
+      </div>
+
+      <div id="main-wrapper">
+        <div class="wrapper style2">
+          <div class="inner">
+            <div class="container">
+              <div id="content">
+                <article>
+                  <header class="major">
+                    <h2>Videos</h2>
+                    <p>Embeds prefer the first active source</p>
+                  </header>
+                  <div id="videos" class="video-grid"></div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="footer-wrapper">
+        <footer id="footer" class="container">
+          <div class="row">
+            <div class="col-12">
+              <div id="copyright">
+                <ul class="menu">
+                  <li>&copy; <span id="year"></span> Your Name. All rights reserved.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.dropotron.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/site.js"></script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      window.Site.renderVideos('videos', 'data/videos.json');
+    </script>
+  </body>
+</html>
