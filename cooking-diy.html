@@ -1,16 +1,10 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Photography</title>
+    <title>Cooking & DIY</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-      .gallery-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(260px,1fr)); gap: 2rem; }
-      .gallery-grid .box { margin: 0; }
-      .video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; }
-      .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
-    </style>
   </head>
   <body class="no-sidebar is-preload">
     <div id="page-wrapper">
@@ -22,10 +16,10 @@
               <nav id="nav">
                 <ul>
                   <li><a href="index.html">Home</a></li>
-                  <li class="current_page_item"><a href="photography.html">Photography</a></li>
+                  <li><a href="photography.html">Photography</a></li>
                   <li><a href="videos.html">Videos</a></li>
                   <li><a href="blog.html">Blog</a></li>
-                  <li><a href="cooking-diy.html">Cooking & DIY</a></li>
+                  <li class="current_page_item"><a href="cooking-diy.html">Cooking & DIY</a></li>
                 </ul>
               </nav>
             </div>
@@ -40,10 +34,10 @@
               <div id="content">
                 <article>
                   <header class="major">
-                    <h2>Photography</h2>
-                    <p>Selected shots and projects</p>
+                    <h2>Cooking & Home DIY</h2>
+                    <p>Projects, recipes, and experiments</p>
                   </header>
-                  <div id="photos" class="gallery-grid"></div>
+                  <div id="cooking"></div>
                 </article>
               </div>
             </div>
@@ -75,7 +69,7 @@
     <script src="assets/js/site.js"></script>
     <script>
       document.getElementById('year').textContent = new Date().getFullYear();
-      window.Site.renderPhotos('photos', 'data/photos.json');
+      window.Site.renderCooking('cooking', 'data/cooking.json');
     </script>
   </body>
 </html>
