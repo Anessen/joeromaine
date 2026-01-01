@@ -1,0 +1,117 @@
+/* ============================================
+   BREATHING CIRCLES BACKGROUND WALLPAPER
+   ============================================
+   
+   Easy color customization:
+   - Change --bg-gradient-start and --bg-gradient-end for background colors
+   - Change --circle-color for the animated circles color
+   - Adjust --circle-opacity values for circle visibility
+*/
+
+/* Color Variables - Easy to customize */
+:root {
+    --bg-gradient-start: #00adef;
+    --bg-gradient-end: #0076e5;
+    --circle-color: #fff;
+    --circle-opacity-small: 0.4;
+    --circle-opacity-medium: 0.3;
+    --circle-opacity-large: 0.2;
+    --circle-opacity-xlarge: 0.1;
+    --circle-opacity-xxlarge: 0.05;
+    
+    /* Animation settings */
+    --animation-duration: 3s;
+    --animation-scale: 1.1;
+}
+
+/* Background Wallpaper Container */
+.bg-wallpaper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    
+    /* Gradient Background */
+    background: var(--bg-gradient-start);
+    background: -moz-linear-gradient(-45deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    background: -webkit-linear-gradient(-45deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+}
+
+/* Breathing Circle Base Styles */
+.bg-wallpaper .breathing-circle {
+    position: absolute;
+    background: var(--circle-color);
+    border-radius: 50%;
+    animation: circle-breathe var(--animation-duration) ease-in-out infinite alternate;
+    animation-timing-function: cubic-bezier(.6, 0, .4, 1);
+}
+
+/* Individual Circle Sizes and Positions */
+.bg-wallpaper .circle-small {
+    width: 300px;
+    height: 300px;
+    top: 200px;
+    left: -150px;
+    opacity: var(--circle-opacity-small);
+    animation-delay: 0s;
+}
+
+.bg-wallpaper .circle-medium {
+    width: 600px;
+    height: 600px;
+    top: 50px;
+    left: -300px;
+    opacity: var(--circle-opacity-medium);
+    animation-delay: 0.3s;
+}
+
+.bg-wallpaper .circle-large {
+    width: 900px;
+    height: 900px;
+    top: -100px;
+    left: -450px;
+    opacity: var(--circle-opacity-large);
+    animation-delay: 0.6s;
+}
+
+.bg-wallpaper .circle-xlarge {
+    width: 1200px;
+    height: 1200px;
+    top: -250px;
+    left: -600px;
+    opacity: var(--circle-opacity-xlarge);
+    animation-delay: 0.9s;
+}
+
+.bg-wallpaper .circle-xxlarge {
+    width: 1500px;
+    height: 1500px;
+    top: -400px;
+    left: -750px;
+    opacity: var(--circle-opacity-xxlarge);
+    animation-delay: 1.2s;
+}
+
+/* Breathing Animation Keyframes */
+@keyframes circle-breathe {
+    0% {
+        transform: scale(1.0);
+    }
+    100% {
+        transform: scale(var(--animation-scale));
+    }
+}
+
+/* Webkit prefix for older browsers */
+@-webkit-keyframes circle-breathe {
+    0% {
+        -webkit-transform: scale(1.0);
+    }
+    100% {
+        -webkit-transform: scale(var(--animation-scale));
+    }
+}
